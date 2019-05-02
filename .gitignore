@@ -1,0 +1,14 @@
+﻿# ignore 
+
+*.exe
+*.o
+*.cbp
+*.depend
+*.layout
+
+
+# ignore Quartus II generated folders
+C++/*/*/bin/
+C++/*/*/obj/
+
+
