@@ -204,7 +204,9 @@ class BombedMazeFactory: public MazeFactory
 class MazeGame
 {
     public:
-      Maze* creatMaze(MazeFactory& factory) // This method can create any type of maze that have MazeFactory class as basic class
+    // This method can create any type of maze that have MazeFactory class as basic class
+    // The created maze has two Rooms with a door between them
+      Maze* creatMaze(MazeFactory& factory)
       {
           Maze* aMaze = factory.MakeMaze();
           Room* r1 = factory.MakeRoom(1);
