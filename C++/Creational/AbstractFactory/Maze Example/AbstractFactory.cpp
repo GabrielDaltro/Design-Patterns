@@ -1,6 +1,13 @@
+/*
+Gabriel Daltro Duarte
+
+Implementation of AbstractFactory Design Pattern.
+Example taken from GoF Book
+
+*/
 
 
-//Enun that represent the four directions
+//Enun that represents the four directions
 enum Direction {North, South, East, West};
 
 /* MapSite is a abstract class that represents all maze objects
@@ -238,8 +245,8 @@ int main()
     BombedMazeFactory BombedMaze;
     EnchantedMazeFactory enchantedMaze;
 
-    game.creatMaze(BombedMaze);
-    game.creatMaze(enchantedMaze);
+    game.creatMaze(BombedMaze); // Construct a Bombed Maze
+    game.creatMaze(enchantedMaze); //Construct a Enchanted  Maze
 
     return 0;
 }
