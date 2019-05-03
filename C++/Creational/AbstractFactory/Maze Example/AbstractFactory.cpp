@@ -144,7 +144,7 @@ class Maze
 
 };
 
-/* Room, Door and Wall are products class
+/* Room, Door and Wall and yours derived classes are products class
    MazeFactory is the interface between client's code and the concrete factories
    Each concrete factory creates differents sets of products*/
 class MazeFactory
@@ -186,7 +186,7 @@ class EnchantedMazeFactory: public MazeFactory
 };
 
 
-//Concrete subclass of MazeFactory
+//Concrete derived class of MazeFactory
 //BombedMazeFactory creates RoomWithABomb and BombedWall
 class BombedMazeFactory: public MazeFactory
 {
