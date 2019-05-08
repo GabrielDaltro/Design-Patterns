@@ -169,7 +169,10 @@ class BombedMazeGame: public MazeGame { // Concrete Creator
 
 int main() // client
 {
+    Maze* aMaze;
+    BombedMazeGame game;
 
+    aMaze = game.createMaze();
 
     return 0;
 }
